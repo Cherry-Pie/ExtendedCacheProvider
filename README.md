@@ -14,3 +14,14 @@ in /app/config/app.php add following:
     //..
 ),
 ```
+
+in /app/config/cache.php add following:
+```php
+'driver' => 'memcache',
+//..
+'memcache' => array(
+	'host'   => '127.0.0.1', 
+	'port'   => 11211, 
+	'weight' => 64,
+),
+```
